@@ -1,0 +1,12 @@
+{
+    "extra": {
+        "installer-paths": {
+            "cakedc/migrations" : ["Plugin/Migrations"]
+        }
+    },
+    "require": {
+        "cakephp/cakephp": "2.4.*",
+        "cakedc/migrations": "2.2.*",
+        "phpunit/phpunit": "4.0.*"
+    }
+}
