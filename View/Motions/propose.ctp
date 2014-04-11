@@ -1,4 +1,4 @@
-<h2>Add Motion</h2>
+<h2>Propose Motion</h2>
 <?php
 echo $this->Form->create('Motion');
 echo $this->Form->input('title');

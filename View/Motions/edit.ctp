@@ -1,4 +1,4 @@
-<h1>Edit Motion</h1>
+<h2>Edit Motion</h2>
 <?php
 echo $this->Form->create('Motion');
 echo $this->Form->input('id', array('type' => 'hidden'));

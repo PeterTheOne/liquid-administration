@@ -19,6 +19,17 @@ class MotionsController extends AppController {
         $this->set('motion', $motion);
     }
 
+    public function propose() {
+        if ($this->request->is('post')) {
+            $this->Motion->create();
+            if ($this->Motion->save($this->request->data)) {
+                $this->Session->setFlash(__('Your motion has been saved.'));
+                return $this->redirect(array('action' => 'index'));
+            }
+            $this->Session->setFlash(__('Unable to add your motion.'));
+        }
+    }
+
     public function add() {
         if ($this->request->is('post')) {
             $this->Motion->create();
